@@ -9,13 +9,13 @@ int main() {
     int num = 0;
 
     while (true) {
-        std::cout << "¬ведите число:" << std::endl;
+        std::cout << "Enter the number:" << std::endl;
         std::cin >> num;
 
         if (isEven(num))
-            std::cout << "„исло " << num << " чЄтное" << std::endl;
+            std::cout << "Number " << num << " is even" << std::endl;
         else
-            std::cout << "„исло " << num << " нечЄтное" << std::endl;
+            std::cout << "Number " << num << " is odd" << std::endl;
     }
 
     return 0;
