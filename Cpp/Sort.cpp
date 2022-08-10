@@ -47,22 +47,22 @@ int main() {
     setlocale(0, "");
     int size = 0;
 
-    std::cout << "”кажите размер массива." << std::endl;
+    std::cout << "Specify the size of the array: " << std::endl;
     std::cin >> size;
     std::vector<int> A(size);
 
-    std::cout << "¬ведите элементы массива через пробел." << std::endl;
+    std::cout << "Enter array elements separated by a space: " << std::endl;
     for (int i = 0; i < size; i++)
         std::cin >> A[i];
 
-    std::cout << "»сходный массив размера " << size << std::endl;
+    std::cout << "Array size: " << size << std::endl;
     for (int i = 0; i < size - 1; i++)
         std::cout << A[i] << " ";
     std::cout << A[size - 1] << std::endl;
 
     Sort(A);
 
-    std::cout << "–езультат сортировки:" << std::endl;
+    std::cout << "Sort result:" << std::endl;
     for (int i = 0; i < size; i++)
         std::cout << A[i] << " ";
 
