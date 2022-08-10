@@ -77,14 +77,14 @@ int main(int argc, char** argv)
 
     for (int i = 1; i <= count; ++i) {
         c.Add(i);
-        cout << "Добавили элемент: " << i << endl;
-        cout << "Всего элементов: " << c.GetOccupiedSpace() << endl;
+        cout << "Added element: " << i << endl;
+        cout << "Number of elements: " << c.GetOccupiedSpace() << endl;
     }
 
     count = c.GetOccupiedSpace();
     for (int i = 0; i < count; ++i) {
-        cout << "Достали элемент: " << c.Get() << endl;
-        cout << "Всего элементов: " << c.GetOccupiedSpace() << endl;
+        cout << "Got an element: " << c.Get() << endl;
+        cout << "Number of elements: " << c.GetOccupiedSpace() << endl;
     }
 
     return 0;
